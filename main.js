@@ -1,0 +1,1 @@
+// document.querySelectorAll("*").forEach( i => { i.style.color.innerHTML = black })

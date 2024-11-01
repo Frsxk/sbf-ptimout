@@ -171,14 +171,32 @@ input:hover {
     border: 1px solid #292f33;
 }
 
-.contact {
+.login {
     display: inline-block;
+    width: 400px;
+    height: auto;
     margin: 10px 80px;
     text-align: center;
+    border-radius: 10px;
+    background-color: #292f33;
 }
 
-.contact h2 {
+.login h2 {
+    color: #f5f5f1;
     font-family: 'Montserrat', sans-serif;
+}
+
+.login a {
+    color: #f5f5f1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-right: 6px;
+    margin-top: 6px;
+    color: #f5f5f1;
 }
 
 .form-container {
@@ -191,13 +209,15 @@ input:hover {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 75px;
 }
 
-.fa-user, .fa-lock {
+.fa-user, .fa-lock, .fa-globe {
     font-size: 27px;
 }
 
 .form-label {
+    color: #f5f5f1;
     position: absolute;
     left: 10px;
     top: 10px;
@@ -221,7 +241,8 @@ input:hover {
     left: 0;
     border-style: none;
     outline: none;
-    background-color: #292f33;
+    color: #f5f5f1;
+    background-color: #221f1f;
     padding: 0;
     margin: 0;
     font-size: 15px;
@@ -231,5 +252,21 @@ input:hover {
 .submit {
     border-style: none;
     border-radius: 20px;
+    color: #221f1f;
     background-color: #e50914;
+    margin: 20px 50px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-item:focus + .form-label {
+    top: -10px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
+    top: -7px;
+    left: -2px;
+    font-size: 10px;
 }

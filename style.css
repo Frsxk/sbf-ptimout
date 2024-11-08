@@ -158,6 +158,14 @@ article {
     border-radius: 5px;
 }
 
+.play {
+    background-color: #e50914;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
 input {
     width: 70%;
     border: none;
@@ -261,12 +269,12 @@ input:hover {
 
 .input-item:focus + .form-label {
     top: -10px;
-    left: -2px;
+    left: -1px;
     font-size: 10px;
 }
 
 .input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
     top: -7px;
-    left: -2px;
+    left: -1px;
     font-size: 10px;
 }
